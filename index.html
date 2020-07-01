@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Real Estate Agency of the Year Sunshine Coast - Amber Werchon Property - We Sell One Property Every Day"
+    />
+    <meta
+      name="keywords"
+      content="Real estate, sunshine coast, Mooloolaba, Nambour, Caloundra, Amber Werchon, Amber Werchon Property, top agency, number one agency, agency of the year"
+    />
+    <title>Amber Werchon Property | Real Estate Agent</title>
+    <link
+      rel="shortcut icon"
+      type="image/ico"
+      href="https://www.amberwerchon.com.au/wp-content/themes/ap-amber/favicon.ico?v=3.00"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="wrapper">
+      <header class="nav" role="navigation">
+        <nav class="nav__inner">
+          <div class="logo">
+            <img
+              src="https://www.amberwerchon.com.au/wp-content/uploads/2017/09/Amber-Werchon-Property-Logo.png"
+              alt=""
+            />
+          </div>
+          <ul class="nav__inner--links">
+            <li><a href="#">Buy</a></li>
+            <li><a href="#">Rent</a></li>
+            <li><a href="#">Commercial</a></li>
+            <li><a href="#">Sold</a></li>
+            <li><a href="#">Businesses</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <button class="btn-mobile" onclick="slideMenu()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </nav>
+      </header>
+      <main class="section">
+        <div class="section__inner">
+          <div class="section__inner--slideshow">
+            <div
+              class="section__inner--slideshow__image"
+              style="
+                background-image: url('https://www.amberwerchon.com.au/wp-content/uploads/2020/02/minh-pham-7pCFUybP_P8-unsplash-scaled.jpg');
+              "
+            ></div>
+            <div
+              class="section__inner--slideshow__image"
+              style="
+                background-image: url('https://www.amberwerchon.com.au/wp-content/uploads/2018/08/D142.jpg');
+              "
+            ></div>
+
+            <div
+              class="section__inner--slideshow__image"
+              style="
+                background-image: url('https://www.amberwerchon.com.au/wp-content/uploads/2020/02/157983235047005980-rsd.jpg');
+              "
+            ></div>
+
+            <div
+              class="section__inner--slideshow__image"
+              style="
+                background-image: url('https://www.amberwerchon.com.au/wp-content/uploads/2020/02/jason-briscoe-UV81E0oXXWQ-unsplash-scaled.jpg');
+              "
+            ></div>
+          </div>
+          <div class="section__inner--search">
+            <div class="title--overlap">
+              <h1><span>What's my property worth?</span></h1>
+              <a href="#" class="title--overlap__btn" role="button" tabindex="1"
+                >Click here</a
+              >
+            </div>
+            <form action="">
+              <label for="1type">
+                Listing type
+              </label>
+              <select
+                class="search-type"
+                name="ltype"
+                id="ltype"
+                aria-invalid="false"
+              >
+                <option value="">Listing Type</option>
+                <option value="commercial">Commercial</option>
+                <option value="residential">Residential</option>
+              </select>
+              <label for="list">
+                Buy
+              </label>
+              <select
+                class="search-type"
+                name="list"
+                id="list"
+                aria-invalid="false"
+              >
+                <option value="sale">Buy</option>
+                <option value="lease">Lease</option>
+                <option value="latest_sold">Sold</option>
+                <option value="latest_leased">Leased</option>
+              </select>
+              <label for="search_keywoards">Search</label>
+              <input
+                type="text"
+                value=""
+                class="keywords"
+                name="keywords"
+                placeholder="Search by Suburb, Postcode or keyword"
+                id="search_keywords"
+              />
+              <button type="submit">Search</button>
+            </form>
+            <div class="section__inner--search__option">
+              <div>
+                <input
+                  id="sur_suburbs"
+                  name="sur_suburbs"
+                  value="1"
+                  type="checkbox"
+                />
+                <label for="sur_suburbs">Surrounding Suburbs</label>
+              </div>
+              <div><button class="btn-opt">View more options</button></div>
+            </div>
+            <div class="section__inner--search__more">
+              <div class="section__inner--search__more--flex">
+                <div id="price_for_sale">
+                  <span class="price-min">
+                    <label>Price Min</label>
+                    <select name="price_min" id="price_min" class="left alt">
+                      <option value="">Any</option>
+                      <option value="50000">$50,000</option>
+                      <option value="100000">$100,000</option>
+                      <option value="150000">$150,000</option>
+                      <option value="200000">$200,000</option>
+                      <option value="250000">$250,000</option>
+                      <option value="300000">$300,000</option>
+                      <option value="350000">$350,000</option>
+                      <option value="400000">$400,000</option>
+                      <option value="450000">$450,000</option>
+                      <option value="500000">$500,000</option>
+                      <option value="550000">$550,000</option>
+                      <option value="600000">$600,000</option>
+                      <option value="650000">$650,000</option>
+                      <option value="700000">$700,000</option>
+                      <option value="750000">$750,000</option>
+                      <option value="800000">$800,000</option>
+                      <option value="850000">$850,000</option>
+                      <option value="900000">$900,000</option>
+                      <option value="950000">$950,000</option>
+                      <option value="100000">$1,000,000</option>
+                      <option value="110000">$1,100,000</option>
+                      <option value="120000">$1,200,000</option>
+                      <option value="130000">$1,300,000</option>
+                      <option value="140000">$1,400,000</option>
+                      <option value="150000">$1,500,000</option>
+                      <option value="160000">$1,600,000</option>
+                      <option value="170000">$1,700,000</option>
+                      <option value="180000">$1,800,000</option>
+                      <option value="190000">$1,900,000</option>
+                      <option value="200000">$2,000,000</option>
+                      <option value="2250000">$2,250,000</option>
+                      <option value="2500000">$2,500,000</option>
+                      <option value="2750000">$2,750,000</option>
+                      <option value="3000000">$3,000,000</option>
+                      <option value="3500000">$3,500,000</option>
+                      <option value="4000000">$4,000,000</option>
+                    </select>
+                  </span>
+                  <span class="price-max">
+                    <label>Price Max</label>
+                    <select name="price_max" id="price_max" class="left">
+                      <option value="">Any</option>
+                      <option value="50000">$50,000</option>
+                      <option value="100000">$100,000</option>
+                      <option value="150000">$150,000</option>
+                      <option value="200000">$200,000</option>
+                      <option value="250000">$250,000</option>
+                      <option value="300000">$300,000</option>
+                      <option value="350000">$350,000</option>
+                      <option value="400000">$400,000</option>
+                      <option value="450000">$450,000</option>
+                      <option value="500000">$500,000</option>
+                      <option value="550000">$550,000</option>
+                      <option value="600000">$600,000</option>
+                      <option value="650000">$650,000</option>
+                      <option value="700000">$700,000</option>
+                      <option value="750000">$750,000</option>
+                      <option value="800000">$800,000</option>
+                      <option value="850000">$850,000</option>
+                      <option value="900000">$900,000</option>
+                      <option value="950000">$950,000</option>
+                      <option value="100000">$1,000,000</option>
+                      <option value="110000">$1,100,000</option>
+                      <option value="120000">$1,200,000</option>
+                      <option value="130000">$1,300,000</option>
+                      <option value="140000">$1,400,000</option>
+                      <option value="150000">$1,500,000</option>
+                      <option value="160000">$1,600,000</option>
+                      <option value="170000">$1,700,000</option>
+                      <option value="180000">$1,800,000</option>
+                      <option value="190000">$1,900,000</option>
+                      <option value="200000">$2,000,000</option>
+                      <option value="2250000">$2,250,000</option>
+                      <option value="2500000">$2,500,000</option>
+                      <option value="2750000">$2,750,000</option>
+                      <option value="3000000">$3,000,000</option>
+                      <option value="3500000">$3,500,000</option>
+                      <option value="4000000">$4,000,000+</option>
+                    </select>
+                  </span>
+                </div>
+                <div id="house_rooms">
+                  <span class="beds">
+                    <label>Beds</label>
+                    <select name="bedrooms" id="bedrooms" class="left alt">
+                      <option value="">Any</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5+</option>
+                    </select>
+                  </span>
+                  <span class="baths">
+                    <label>Baths</label>
+                    <select name="bathrooms" id="bathrooms" class="left">
+                      <option value="">Any</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5+</option>
+                    </select>
+                  </span>
+                  <span class="parking">
+                    <label>Parking</label>
+                    <select name="carspaces" id="carspaces" class="left">
+                      <option value="">Any</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5+</option>
+                    </select>
+                  </span>
+                </div>
+              </div>
+              <div class="email_bottom_section">
+                <div class="email">
+                  <div class="email-me">
+                    <label>Register for Property Alerts</label>
+                    <input
+                      type="text"
+                      class="email_address"
+                      name="email_address"
+                      id="alert-email-address"
+                      placeholder="Enter your email address"
+                    />
+                  </div>
+                </div>
+                <div class="form_contact">
+                  <span class="cant_find"
+                    ><a href="#form_contact_popup" class="open-popup-link"
+                      >Can't Find What You're After?</a
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section__profit">
+          <h1><strong>Profit</strong> from our experience</h1>
+          <div class="section__profit--grid">
+            <article>
+              <p>We sell twice as fast as any agency on the sunshine coast</p>
+            </article>
+            <article>
+              <a href="#"
+                ><img
+                  src="https://www.amberwerchon.com.au/wp-content/uploads/2017/07/awards.png"
+                  alt=""
+              /></a>
+            </article>
+            <article>
+              <p>Everyday someone somewhere on the coast sells with us</p>
+            </article>
+            <article>
+              <a href="#"
+                ><img
+                  src="https://www.amberwerchon.com.au/wp-content/uploads/2018/05/IMAGE.png"
+                  alt=""
+              /></a>
+            </article>
+          </div>
+        </div>
+
+        <div class="section__feedback">
+          <h1><strong>Sell happy!</strong> Client feedback</h1>
+          <div class="section__feedback--grid">
+            <article>
+              <div class="text_overlay">
+                <div class="text_overlay">
+                  <div class="text_overlay__inner">
+                    <h2>Susan Rod</h2>
+                    It’s such a relief to know that I can trust the team at
+                    Amber Werchon Property. They cross their T’s and dot their
+                    I’s... the contract went through beautifully without any
+                    glitches!
+                  </div>
+                </div>
+              </div>
+              <img
+                src="https://www.amberwerchon.com.au/wp-content/uploads/2017/09/Susan-Rod-1.jpg"
+                alt=""
+              />
+            </article>
+            <article>
+              <div class="text_overlay">
+                <div class="text_overlay__inner">
+                  <h2>Karen Bradford</h2>
+                  They know the in’s and out’s of the Coast, they know where
+                  people want to be, where they can get them into and which
+                  property might suit them.
+                </div>
+              </div>
+              <img
+                src="https://www.amberwerchon.com.au/wp-content/uploads/2017/09/Karen-Bradford.jpg"
+                alt=""
+              />
+            </article>
+            <article>
+              <div class="text_overlay">
+                <div class="text_overlay__inner">
+                  <h2>Sam Williams</h2>
+                  It was an easy decision for us to make to use Amber Werchon
+                  Property, because in our opinion they have the best resources
+                  by far. We had a tight timeframe to move on and they just hit
+                  it with everything they had and we sold at Auction.
+                </div>
+              </div>
+              <img
+                src="https://www.amberwerchon.com.au/wp-content/uploads/2017/09/Sam-Williams.jpg"
+                alt=""
+              />
+            </article>
+            <article>
+              <div class="text_overlay">
+                <div class="text_overlay__inner">
+                  <h2>Kate Cooper</h2>
+                  They asked exactly what we wanted, went into detail with what
+                  we needed and what we wanted to purchase at the time and found
+                  us the perfect place. We have now bought, sold and rented
+                  through AWP and have been extremely happy with all our
+                  experiences.
+                </div>
+              </div>
+              <img
+                src="https://www.amberwerchon.com.au/wp-content/uploads/2017/09/Kate-Cooper.jpg"
+                alt=""
+              />
+            </article>
+          </div>
+        </div>
+
+        <div class="section__video">
+          <div class="section__video--inner">
+            <iframe
+              frameborder="0"
+              allowfullscreen="1"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              title="YouTube video player"
+              src="https://www.youtube.com/embed/IM8zvCmYgsk?autoplay=0&amp;modestbranding"
+              unselectable="on"
+            ></iframe>
+          </div>
+        </div>
+
+        <div class="section__helps">
+          <h1><strong>More ways</strong> We can help you</h1>
+          <div class="section__helps--wrapper">
+            <ul class="section__helps--wrapper__grid">
+              <li><a href="">Commercial</a></li>
+              <li><a href="">Business Sale</a></li>
+              <li><a href="">Projects</a></li>
+              <li><a href="">Finance</a></li>
+              <li><a href="">Sign up for E-newslatter</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="section__careers">
+          <div class="section__careers--inner">
+            <div
+              class="section__careers--inner__box"
+              style="
+                background-image: url('https://www.amberwerchon.com.au/wp-content/uploads/2020/03/photo-of-people-doing-handshakes-3183197-1.jpg');
+              "
+            ></div>
+            <div class="section__careers--inner__box">
+              <h2>Careers</h2>
+              <p>
+                We're always on the lookout for great people to join our team.
+                We put our people first so they're able to deliver exceptional
+                service levels to our clients and there's a company focus on
+                fantastic workplace culture and work-life balance. Make no
+                mistake, we have high expectations, and we're looking for the
+                best, but the rewards are endless when working for our boutique
+                brand.
+              </p>
+              <a href="#" class="btn">View more</a>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer" role="contentinfo">
+        <div class="footer__inner">
+          <div class="footer__inner--grid">
+            <ul>
+              <li>
+                <a href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    viewBox="0 0 24 24"
+                    fill="#e0e0e0"
+                  >
+                    <path
+                      d="M22.5 0c.83 0 1.5.67 1.5 1.5v21c0 .83-.67 1.5-1.5 1.5h-6v-9h3l.75-3.75H16.5v-1.5c0-1.5.75-2.25 2.25-2.25h1.5V3.75h-3c-2.76 0-4.5 2.16-4.5 5.25v2.25h-3V15h3v9H1.5A1.5 1.5 0 0 1 0 22.5v-21C0 .67.67 0 1.5 0h21z"
+                    /></svg
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    viewBox="0 0 24 24"
+                    fill="#e0e0e0"
+                  >
+                    <path
+                      d="M20 0a4 4 0 0 1 4 4v16a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4h16zm-4.42 5.8a3.28 3.28 0 0 0-3.2 4.03A9.32 9.32 0 0 1 5.61 6.4a3.26 3.26 0 0 0 1.02 4.38 3.27 3.27 0 0 1-1.49-.4v.03a3.28 3.28 0 0 0 2.64 3.22 3.3 3.3 0 0 1-1.49.06 3.29 3.29 0 0 0 3.07 2.28 6.59 6.59 0 0 1-4.86 1.36 9.29 9.29 0 0 0 5.03 1.47c6.04 0 9.34-5 9.34-9.34v-.42a6.65 6.65 0 0 0 1.63-1.7c-.59.26-1.22.44-1.89.52.68-.41 1.2-1.05 1.45-1.82-.64.38-1.34.65-2.09.8a3.28 3.28 0 0 0-2.4-1.04z"
+                    /></svg
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    viewBox="0 0 24 24"
+                    fill="#e0e0e0"
+                  >
+                    <path
+                      d="M20 0a4 4 0 0 1 4 4v16a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4h16zm-4.89 4.5H8.9C6.33 4.5 4.6 6.15 4.5 8.66V15.09c0 1.3.42 2.41 1.27 3.23a4.34 4.34 0 0 0 2.88 1.17l.27.01h6.16c1.3 0 2.4-.42 3.18-1.18a4.25 4.25 0 0 0 1.23-2.95l.01-.26V8.9c0-1.28-.42-2.36-1.21-3.15a4.24 4.24 0 0 0-2.92-1.23l-.26-.01zm-6.2 1.4h6.24c.9 0 1.66.26 2.2.8.47.5.77 1.18.81 1.97V15.1c0 .94-.32 1.7-.87 2.21-.5.47-1.17.74-1.98.78H8.92c-.91 0-1.67-.26-2.21-.78-.5-.5-.77-1.17-.81-2V8.88c0-.9.26-1.66.8-2.2a2.98 2.98 0 0 1 2-.78h6.45-6.23zM12 8.1a3.88 3.88 0 0 0 0 7.74 3.88 3.88 0 0 0 0-7.74zm0 1.39a2.5 2.5 0 0 1 2.48 2.48A2.5 2.5 0 0 1 12 14.45a2.5 2.5 0 0 1-2.48-2.48A2.5 2.5 0 0 1 12 9.49zm4.02-2.36a.88.88 0 1 0 0 1.76.88.88 0 0 0 0-1.76z"
+                    /></svg
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    viewBox="0 0 24 24"
+                    fill="#e0e0e0"
+                  >
+                    <path
+                      d="M20 0a4 4 0 0 1 4 4v16a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4h16zm-7.44 4.2C8.33 4.2 6.2 7.33 6.2 9.94c0 1.58.58 2.99 1.82 3.51.2.09.39 0 .45-.23l.18-.74c.05-.2.04-.28-.07-.43l-.06-.08a2.7 2.7 0 0 1-.59-1.8c0-2.32 1.69-4.4 4.39-4.4 2.39 0 3.7 1.5 3.7 3.52 0 2.65-1.13 4.89-2.82 4.89-.93 0-1.63-.8-1.4-1.77.26-1.17.78-2.42.78-3.27 0-.75-.39-1.37-1.2-1.37-.95 0-1.72 1.01-1.72 2.37 0 .87.29 1.46.29 1.46l-1.15 5c-.34 1.5-.05 3.31-.02 3.5.01.1.15.13.2.05l.2-.25a9.67 9.67 0 0 0 1.36-2.57l.05-.19.63-2.52c.31.6 1.21 1.14 2.18 1.14 2.86 0 4.8-2.69 4.8-6.3 0-2.72-2.24-5.26-5.64-5.26z"
+                    /></svg
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    viewBox="0 0 24 24"
+                    fill="#e0e0e0"
+                  >
+                    <path
+                      d="M20 0a4 4 0 0 1 4 4v16a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4h16zm-7.7 7h-.6l-1.1.01c-1.48.03-3.7.1-4.46.29-.65.16-1.15.65-1.33 1.26-.18.64-.25 1.7-.29 2.46l-.02.82v.75c.03.76.1 2.09.31 2.85.18.61.68 1.1 1.33 1.26.74.19 2.87.26 4.34.29l1.41.01h1.16c1.45-.03 4-.09 4.81-.3a1.84 1.84 0 0 0 1.33-1.26c.2-.75.28-2.05.3-2.82v-.93c0-.67-.06-2.26-.3-3.13a1.84 1.84 0 0 0-1.33-1.26 25.9 25.9 0 0 0-3.88-.28L12.3 7zM10.46 9.9L14.39 12l-3.92 2.11V9.89z"
+                    /></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__inner--grid">
+            <ul>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div id="menu">
+      <ul>
+        <li><a href="#">Buy</a></li>
+        <li><a href="#">Rent</a></li>
+        <li><a href="#">Commercial</a></li>
+        <li><a href="#">Sold</a></li>
+        <li><a href="#">Businesses</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Our Team</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <script>
+      const btnOptions = document.querySelector(".btn-opt");
+      const hiddenOptions = document.querySelector(
+        ".section__inner--search__more"
+      );
+
+      btnOptions.addEventListener("click", () => {
+        hiddenOptions.classList.toggle("is-shown");
+      });
+
+      function slideMenu() {
+        const menuwrapper = document.querySelector("#menu");
+        const mainwrapper = document.querySelector("#wrapper");
+
+        menuwrapper.classList.toggle("is-appear");
+        mainwrapper.classList.toggle("is-moved");
+      }
+    </script>
+  </body>
+</html>
